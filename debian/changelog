@@ -1,5 +1,13 @@
-template-repository (1.0-1) unstable; urgency=medium
+protobuild (0.3.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Bump Standards Version to 4.7.0
+  * Build against golang/protobuf@v1.5
+  * debian/control: Remove redundant field Section
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 01 Aug 2024 08:05:17 -0400
+
+protobuild (0.3.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1073118)
+
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 13 Jun 2024 12:19:36 -0400
