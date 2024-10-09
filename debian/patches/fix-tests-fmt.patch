@@ -1,0 +1,15 @@
+Index: protobuild/cmd/go-fix-acronym/rewrite_test.go
+===================================================================
+--- protobuild.orig/cmd/go-fix-acronym/rewrite_test.go
++++ protobuild/cmd/go-fix-acronym/rewrite_test.go
+@@ -56,8 +56,8 @@ func TestRewrite(t *testing.T) {
+ 		{
+ 			name:     "Simple",
+ 			c:        config{acronyms: []string{"Cpu"}},
+-			input:    "//hello\npackage main\nfunc GetCpu(){}",
+-			expected: "//hello\npackage main\n\nfunc GetCPU() {}",
++			input:    "// hello\npackage main\nfunc GetCpu(){}",
++			expected: "// hello\npackage main\n\nfunc GetCPU() {}",
+ 		},
+ 		{
+ 			name: "Multiple matches",
